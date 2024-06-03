@@ -31,7 +31,7 @@ jobs:
 
     - name: Run Ansible Playbook
       run: |
-        ansible-playbook -i inventory playbook.yml
+        ansible-playbook -i inventory playbook.yaml
       env:
         ANSIBLE_HOST: ${{ secrets.ANSIBLE_HOST }}
         ANSIBLE_USER: ${{ secrets.ANSIBLE_USER }}
